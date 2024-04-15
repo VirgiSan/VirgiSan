@@ -107,8 +107,8 @@ nav .icon-bars .line {
 
 
 .imagen-vir {
-    margin-top: 90px;
-    margin-left: 930px;
+    margin-top: 70px;
+    margin-left: 900px;
     position: absolute;
     z-index: 10;
     float: right;
@@ -178,7 +178,9 @@ nav .icon-bars .line {
 }
 .img2 {
     float: left;
+    clip-path: circle(50% at 50% 50%);
 }
+
 
 
 #educacion h2 {
@@ -189,12 +191,17 @@ nav .icon-bars .line {
     margin-top: 1120px;
     margin-left: 550px; 
 }
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .cuadrado1 {
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     z-index: 1;
     margin-top: 1250px;
-    margin-left: 200px; 
+    margin-left: -460px;
 }
 .cuadrado1 h3 {
     font-size: 30px;
@@ -214,9 +221,9 @@ nav .icon-bars .line {
 .cuadrado2 {
     position: absolute;
     z-index: 1;
-    margin-top: 1250px;
-    margin-left: 830px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1250px;
+    margin-left: 570px;
 }
 .cuadrado2 h3 {
     font-size: 30px;
