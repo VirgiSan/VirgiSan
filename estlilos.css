@@ -13,6 +13,9 @@ h3{
     font-family:  "Montserrat Alternates";
     color: #C6E11C;
 }
+a {
+    text-decoration: none;
+}
 
 
 #navegador {
@@ -165,14 +168,39 @@ nav a {
     }
 }
 
-.galeria {
-    height: 1200px;
-    background-color:#18602C;
+
+#contenedor{
+    height: 1100px;
+    overflow: hidden;
+    background-color: #18602C;
+    
 }
+.galeria {
+    height: 100%;
+    position: relative;
+    
+}
+.carrusel {
+    height: 100%;
+    padding: 100px 220px 20px;
+}
+.flechas {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
 
-
-
-
+}
+.flecha-iz {
+    transform: rotate(180deg);
+}
+.foto-carrusel1 {
+    border-radius: 40px;
+}
 
 
 
@@ -258,6 +286,7 @@ textarea {
 
     p {
         width: 520px;
+        color: #18602C;
     }
 
     span {
@@ -265,6 +294,7 @@ textarea {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
+        text-decoration: none;
 
         h4{
             font-family: "Montserrat Alternates";
@@ -286,7 +316,9 @@ textarea {
         flex-direction: row;
         justify-content: flex-start;
         gap: 10px;
+        text-decoration: none;
     }
+    
 }
 
 
@@ -307,7 +339,7 @@ textarea {
     gap: 20px;
     justify-content: center;
 }
-.brezza, .expo1, .expo2, .tipo1, .tipo2 {
+.brezza, .expo1, .expo2, .tipo1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -321,14 +353,21 @@ textarea {
     align-items: center;
     gap: 20px;
 }
-.libro, .memoria-tipo1, .memoria-tipo2, .afiches-tipo, .mockup-tipo {
+.memoria-tipo1, .memoria-tipo2, .afiches-tipo, .mockup-tipo {
     margin-left: 20px;
 }
 
 
 
 footer {
-    height: 100px;
+    height: 200px;
     background-color: #18602C;
-
+    color: #FC9EFF;
+    font-size: 20px;
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 100px;
 }
