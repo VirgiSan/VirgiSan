@@ -560,8 +560,11 @@ footer {
 /* movil */
  @media screen and (max-width: 600px) {
     #navegador {
-        font-size: 1.2em;
-        height: 12opx;
+        font-size: 1.8em;
+        height: 120px;
+        padding: 30px;
+        width: 600px;
+
     }
     nav ul {
         width: 100%;
@@ -577,16 +580,14 @@ footer {
         overflow-y: auto;
     }
     nav li {
-        padding: 20x 0;
+        padding: 20px 0;
     }
     .inicio a:active{
         background: none;
     }
     .logo {
-        padding: 0 16px;
         display: flex;
-        height: 80px;
-        font-size: 50px;
+        font-size: 30px;
     }
     .inicio label img {
         width: 30px;
@@ -598,8 +599,8 @@ footer {
     #menu {
         display: block;
         position: absolute;
-        right: 16px;
-        top: 25px;
+        right: 46px;
+        top: 40px;
     }
     #menu_cerrar {
         display: none;
@@ -612,5 +613,16 @@ footer {
     #menu_check:checked~label #menu_cerrar {
         display: block;
     }
+
+
+    #presentacion {
+        padding: 30px;
+        height: 38vh;
+        align-items: flex-end;
+    }
+    .nombre {
+        font-size: 60px;
+    }
+    
 
 }
