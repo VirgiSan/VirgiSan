@@ -57,6 +57,10 @@ nav a {
     list-style: none;
     gap: 40px;
 }
+#menu,
+#menu_check {
+    display: none;
+}
 
 
 /* index */
@@ -297,7 +301,7 @@ nav a {
 }
 .contacto {
     color:#18602C;
-    width: 83vh;
+    width: 82vh;
     background-color:#C6E11C;
     padding: 48px 40px;
     display: flex;
@@ -437,7 +441,7 @@ textarea {
     gap: 20px;
 }
 .video-medios {
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .close {
@@ -554,35 +558,58 @@ footer {
 
 
 /* movil */
-@media screen and (max-width: 600px)  {
-    #presentacion {
-        width: 600px;
-        height: 84vh;
-        background-color: #18602C;
+ @media screen and (max-width: 600px) {
+    #navegador {
+        font-size: 1.2em;
+    }
+    nav ul {
+        width: 100%;
+        height: calc(100% - 120px);
         display: flex;
-        align-items: center;
-        padding:100px 
-    }
-    .nombre {
-        font-size: 140px;
-        
-    }
-    .nombre1 {
         flex-direction: column;
-    }
-    .nombre2 {
-        flex-direction: row;
-    }
-    
-    .redes-fijo {
-        background-color: #C6E11C;
-        padding: 20px;
+        text-align: center;
+        background-color: black;
         position: fixed;
-        right: 0px;
-        z-index: 50;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        left: 0;
+        top: 70px;
+        gap: 15px;
+        overflow-y: auto;
     }
-    
+    nav li {
+        padding: 20x 0;
+    }
+    .inicio a:active{
+        background: none;
+    }
+    .logo {
+        padding: 0 16px;
+        display: flex;
+        height: 80px;
+        font-size: 30px;
+    }
+    .inicio label img {
+        width: 30px;
+        height: 30px;
+    }
+    #menu_check:not(:checked)~ul {
+        display: none;
+    }
+    #menu {
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 25px;
+    }
+    #menu_cerrar {
+        display: none;
+    }
+
+    #menu_check:checked~label #menu_abrir {
+        display: none;
+    }
+
+    #menu_check:checked~label #menu_cerrar {
+        display: block;
+    }
+
 }
