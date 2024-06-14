@@ -7,16 +7,16 @@
         <link rel="icon" type="image/png" href="img/vir1.png">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <script>
-            function cambiarDisplay(visibilidadNueva) {
-                document.getElementById("galeria").style.display = visibilidadNueva
-            }
-            function mostrarGaleria() {
-                cambiarDisplay('flex')
-            }
-            function ocultarGaleria() {
-                cambiarDisplay('none')
-            }
-        </script>
+			function cambiarDisplay(visibilidadNueva){
+				document.getElementById("galeria").style.display = visibilidadNueva
+			}
+			function mostrarGaleria(){
+				cambiarDisplay('flex')
+			}
+			function ocultarGaleria(){
+				cambiarDisplay('none')
+			}
+	    </script>
     </head>
     <body>
         <header id="navegador">
@@ -30,253 +30,256 @@
                 </ul>
             </nav>
         </header>
-        <main id="trabajos-main">
-            <article class="redes-fijo">
-                <a>
-                    <img class="gmail" src="img/iconos/gmail.png" width="40px" height="40px" alt="icono-gmail">
-                </a>
-                <a href="https://www.instagram.com/vir.santangelo?igsh=MWJnb2luaDEyaWhnNA%3D%3D&utm_source=qr" target="_blank">
-                    <img class="instagram" src="img/iconos/instagram.png" width="40px" height="40px" alt="icono-instagram">
-                </a>
-            </article>
-            <h3>Un poco de mis trabajos...</h3>
-            <section id="imagenes">
-                <article class="brezza">
-                    <div class="brezza-logos">
-                        <a href="#brezza1"  onClick="mostrarGaleria()"><img src="img/brezza1.png" width="1000px" height= "913px" alt="logo-brezza" class="brezza1" ></a>
-                        <a href="#brezza2" onClick="mostrarGaleria()"><img src="img/brezza2.png" width="1000px" height= "438px" alt="logo-brezza" class="brezza2" ></a>
-                    </div>
-                    <a href="#brezzainsta"  onClick="mostrarGaleria()"><img src="img/insta-brezza.jpg" width="680px" height= "1371px" alt="instagram-brezza" class="brezza-insta" ></a>
+        <main >
+            <section id="trabajos-main">
+                <article class="redes-fijo">
+                    <a>
+                        <img class="gmail" src="img/iconos/gmail.png" width="40px" height="40px" alt="icono-gmail">
+                    </a>
+                    <a href="https://www.instagram.com/vir.santangelo?igsh=MWJnb2luaDEyaWhnNA%3D%3D&utm_source=qr" target="_blank">
+                        <img class="instagram" src="img/iconos/instagram.png" width="40px" height="40px" alt="icono-instagram">
+                    </a>
                 </article>
-                <article class="expo">
-                    <div class="expo1">
-                        <div class="postales">
-                            <a href="#postal1" onClick="mostrarGaleria()"><img src="img/expo-postal1.jpg" width="690px" height= "436px" alt="postal-expo" class="postal1" ></a>
-                            <a href="#postal2" onClick="mostrarGaleria()"><img src="img/expo-postal2.jpg" width="690px" height= "436px" alt="postal-expo" class="postal2" ></a>
-                            <a href="#invitacion" onClick="mostrarGaleria()"><img src="img/expo-invitacion.jpg" width="690px" height= "436px" alt="invitacion-expo" class="invitacion-expo" ></a>
+                <h3>Un poco de mis trabajos...</h3>
+                <article id="imagenes">
+                    <div class="brezza">
+                        <div class="brezza-logos">
+                            <a href="#img1" ><img src="img/brezza1.png" width="1000px" height= "913px" alt="logo-brezza" class="brezza1" onClick="mostrarGaleria()"></a>
+                            <a href="#img2" ><img src="img/brezza2.png" width="1000px" height= "438px" alt="logo-brezza" class="brezza2" onClick="mostrarGaleria()"></a>
                         </div>
-                        <a href="#afiche" onClick="mostrarGaleria()"><img src="img/expo-afiche.jpg" width="980px" height= "1348px" alt="afiche-expo" class="afiche-expo" ></a>
+                        <a href="#img3"><img src="img/insta-brezza.jpg" width="680px" height= "1371px" alt="instagram-brezza" class="brezza-insta" onClick="mostrarGaleria()"></a>
                     </div>
-                    <div class="expo2">
-                        <a href="#catalogo1" onClick="mostrarGaleria()"><img src="img/expo-catalogo.jpg" width="830px" height= "600px" alt="catalogo-expo" class="catalogo-expo1" ></a>
-                        <a href="#catalogo2" onClick="mostrarGaleria()"><img src="img/expo-catalogo2.jpg" width="830px" height= "600px" alt="catalogo-expo" class="catalogo-expo2" ></a>
-                    </div>
-                </article>
-                <article class="tipo">
-                    <div class="tipo1">
-                        <a href="#publi" onClick="mostrarGaleria()"><img src="img/publi1.png" width="990px" height= "882px" alt="publicidad-tipo" class="publi-tipo" ></a>
-                        <a href="#gif" onClick="mostrarGaleria()"><img src="img/videos/video-tipo.gif" width="670px" height="882px" alt="gif-tipo" class="gif-tipo" ></a>
-                    </div>
-                    <a href="#memoria1" onClick="mostrarGaleria()"><img src="img/memoria1.png" width="1680px" height= "621px" alt="memoria-tipo" class="memoria-tipo1" ></a>
-                    <a href="#memoria2" onClick="mostrarGaleria()"><img src="img/memoria2.png" width="1680px" height= "621px" alt="memoria-tipo" class="memoria-tipo2" ></a>
-                    <a href="#poster" onClick="mostrarGaleria()"><img src="img/posters.png" width="1680px" height= "942px" alt="afiches-tipo" class="afiches-tipo" ></a>
-                </article>
-                <article class="medios">
-                    <div class="pinturas">
-                        <a href="#pintura3" onClick="mostrarGaleria()"><img src="img/pintura3.jpeg" width="820px" height= "1140px" alt="pintura" class="pintura3" ></a>
-                        <div class="pintura1y2">
-                            <a href="#pintura1" onClick="mostrarGaleria()"><img src="img/pintura1.jpeg" width="840px" height= "560px" alt="pintura" class="pintura1" ></a>
-                            <a href="#pintura2" onClick="mostrarGaleria()"><img src="img/pintura2.jpeg" width="840px" height= "560px" alt="pintura" class="pintura2" ></a>
+                    <div class="expo">
+                        <div class="expo1">
+                            <div class="postales">
+                                <a href="#img4" ><img src="img/expo-postal1.jpg" width="690px" height= "436px" alt="postal-expo" class="postal1" onClick="mostrarGaleria()"></a>
+                                <a href="#img5" ><img src="img/expo-postal2.jpg" width="690px" height= "436px" alt="postal-expo" class="postal2" onClick="mostrarGaleria()"></a>
+                                <a href="#img6" ><img src="img/expo-invitacion.jpg" width="690px" height= "436px" alt="invitacion-expo" class="invitacion-expo" onClick="mostrarGaleria()"></a>
+                            </div>
+                            <a href="#img7" ><img src="img/expo-afiche.jpg" width="980px" height= "1348px" alt="afiche-expo" class="afiche-expo" onClick="mostrarGaleria()"></a>
+                        </div>
+                        <div class="expo2">
+                            <a href="#img8" ><img src="img/expo-catalogo.jpg" width="830px" height= "600px" alt="catalogo-expo" class="catalogo-expo1" onClick="mostrarGaleria()"></a>
+                            <a href="#img9" ><img src="img/expo-catalogo2.jpg" width="830px" height= "600px" alt="catalogo-expo" class="catalogo-expo2" onClick="mostrarGaleria()"></a>
                         </div>
                     </div>
-                    <video src="img/videos/video-pintura.mp4" width="1680px" height="1000px" alt="video-medios" class="video-medios" controls></video>
-                </article>
+                    <div class="tipo">
+                        <div class="tipo1">
+                            <a href="#img10"><img src="img/publi1.png" width="990px" height= "882px" alt="publicidad-tipo" class="publi-tipo" onClick="mostrarGaleria()"></a>
+                            <a href="#img11" ><img src="img/videos/video-tipo.gif" width="670px" height="882px" alt="gif-tipo" class="gif-tipo" onClick="mostrarGaleria()"></a>
+                        </div>
+                        <a href="#img12" ><img src="img/memoria1.png" width="1680px" height= "621px" alt="memoria-tipo" class="memoria-tipo1" onClick="mostrarGaleria()"></a>
+                        <a href="#img13" ><img src="img/memoria2.png" width="1680px" height= "621px" alt="memoria-tipo" class="memoria-tipo2"onClick="mostrarGaleria()" ></a>
+                        <a href="#img14" ><img src="img/posters.png" width="1680px" height= "942px" alt="afiches-tipo" class="afiches-tipo" onClick="mostrarGaleria()" ></a>
+                    </div>
+                    <div class="medios">
+                        <div class="pinturas">
+                            <a href="#img15" ><img src="img/pintura3.jpeg" width="820px" height= "1140px" alt="pintura" class="pintura3" onClick="mostrarGaleria()"></a>
+                            <div class="pintura1y2">
+                                <a href="#img16" ><img src="img/pintura1.jpeg" width="840px" height= "560px" alt="pintura" class="pintura1" onClick="mostrarGaleria()"></a>
+                                <a href="#img17" ><img src="img/pintura2.jpeg" width="840px" height= "560px" alt="pintura" class="pintura2" onClick="mostrarGaleria()"></a>
+                            </div>
+                        </div>
+                        <video src="img/videos/video-pintura.mp4" width="1680px" height="1000px" alt="video-medios" class="video-medios" controls></video>
+                    </div>
 
+                </article>
             </section>
-            <section id="galeria" style="display: none;">
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img1">
-                    <a href="#pintura2" class="flecha-iz-galeria">
-                        <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                    </a>
-                    <img src="img/brezza1.png" alt="logo-brezza" >
-                    <a href="#brezza2" class="flecha-de-galeria">
-                        <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                    </a>
-                    <a href="#" class="close">x</a>
-                </li>
-                </ul>
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img2">
-                        <a href="#brezza1" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/brezza2.png" alt="logo-brezza" >
-                        <a href="#brezzainsta" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li>
-                </ul>
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img3">
-                        <a href="#brezza2" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/insta-brezza.jpg" alt="insta-brezza" >
-                        <a href="#postal1" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li>
-                </ul>
-                <ul id="galeria-oculta">
-                   <li class="light-box" id="img4">
-                        <a href="#brezzainsta" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/expo-postal1.jpg" alt="expo-postal" >
-                        <a href="#postal2" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li> 
-                </ul>
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img5">
-                        <a href="#postal1" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/expo-postal2.jpg" alt="expo-postal" >
-                        <a href="#afiche" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li>
-                </ul>
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img6">
-                        <a href="#postal2" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/expo-afiche.jpg" alt="expo-afiche" >
-                        <a href="#catalogo1" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li>
-                </ul>
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img7">
-                        <a href="#afiche" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/expo-catalogo.jpg" alt="catalogo" >
-                        <a href="#catalogo2" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li>
-                </ul>
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img8">
-                        <a href="#catalogo1" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/expo-catalogo2.jpg" alt="catalogo" >
-                        <a href="#publi" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li>
-                </ul>
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img9">
-                        <a href="#catalogo2" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/publi1.png" alt="publi" >
-                        <a href="#gif" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li>
-                </ul>
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img10">
-                        <a href="#publi" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/videos/video-tipo.gif" alt="gif-tipo" >
-                        <a href="#memoria1" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li>
-                </ul>
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img11">
-                        <a href="#gif" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/memoria1.png" alt="memoria" >
-                        <a href="#memoria2" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li>
-                </ul>
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img12">
-                        <a href="#memoria1" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/memoria2.png" alt="memoria" >
-                        <a href="#poster" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li>
-                </ul>
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img13">
-                        <a href="#memoria2" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/posters.png" alt="poster" >
-                        <a href="#pintura3" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li>
-                </ul>
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img14">
-                        <a href="#poster" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/pintura3.jpeg" alt="pintura" >
-                        <a href="pintura1" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li>
-                </ul>
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img15">
-                        <a href="#pintura3" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/pintura1.jpeg" alt="pintura" >
-                        <a href="#pintura2" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li>
-                </ul>
-                <ul id="galeria-oculta">
-                    <li class="light-box" id="img16">
-                        <a href="#pintura1" class="flecha-iz-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <img src="img/pintura2.jpeg" alt="pintura" >
-                        <a href="#brezza1" class="flecha-de-galeria">
-                            <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
-                        </a>
-                        <a href="#" class="close">x</a>
-                    </li>
-                </ul>
-            </section>
+
+                <article id="galeria">
+                    <ul id="galeria-oculta">
+                    
+                        <li class="fraccion-galeria" id="img1">
+                            <a href="#img17" class="primer-ultima-flecha">
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img2" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                    
+                    
+                        <li class="fraccion-galeria" id="img2">
+                            <a href="#img1" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img3" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="fraccion-galeria" id="img3">
+                            <a href="#img2" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img4" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="fraccion-galeria" id="img4">
+                            <a href="#img3" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img5" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li> 
+
+                        <li class="fraccion-galeria" id="img5">
+                            <a href="#img4">
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img6" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="fraccion-galeria" id="img6">
+                            <a href="#img5">
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img7" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="fraccion-galeria" id="img7">
+                            <a href="#img6" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img8" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="fraccion-galeria" id="img8">
+                            <a href="#img7" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img9" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="fraccion-galeria" id="img9">
+                            <a href="#img8">
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img10" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                           
+                        </li>
+                    
+                        <li class="fraccion-galeria" id="img10">
+                            <a href="#img9" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria" >
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img11" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="fraccion-galeria" id="img11">
+                            <a href="#img10" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img12" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="fraccion-galeria" id="img12">
+                            <a href="#img11" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img13">
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="fraccion-galeria" id="img13">
+                            <a href="#img12" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img14" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="fraccion-galeria" id="img14">
+                            <a href="#img13" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img15" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="fraccion-galeria" id="img15">
+                            <a href="#img14" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img16" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                   
+                        <li class="fraccion-galeria" id="img16">
+                            <a href="#img15" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria">
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img17" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="fraccion-galeria" id="img17">
+                            <a href="#img16" >
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" class="flecha-iz-galeria" >
+                            </a>
+                            <img class="close" src="img/iconos/cerrar.png" alt="Cerrar" width="50px" height="50px" onClick="ocultarGaleria()">
+                            <a href="#img1" class="primer-ultima-flecha">
+                                <img src="img/iconos/flecha.png" width="100px" height="100px" alt="flecha" >
+                            </a>
+                            
+                        </li>
+                    
+                    </ul>
+                </article>
+            
         </main>
         <footer>
             <div class="derechos">

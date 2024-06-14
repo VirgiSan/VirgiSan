@@ -18,6 +18,7 @@ a {
 }
 
 
+/* header */
 #navegador {
     font-family: "Montserrat Alternates";
     font-size: 40px;
@@ -30,7 +31,7 @@ a {
     justify-content: space-between;
     height: 120px;
     position: fixed;
-    z-index: 1000;
+    z-index: 500;
 }
 #navegador a {
     text-decoration: none;
@@ -58,10 +59,10 @@ nav a {
 }
 
 
-
+/* index */
 #presentacion {
     width: 100%;
-    height: 900px;
+    height: 84vh;
     background-color: #18602C;
     display: flex;
     align-items: center;
@@ -94,7 +95,6 @@ nav a {
     gap: 30px;
     
 }
-
 .nombre:hover {
     color: #C6E11C;
 
@@ -108,23 +108,12 @@ nav a {
         font-style: normal;
     }
 }
-
 .redes-fijo {
     background-color: #C6E11C;
     padding: 20px;
     position: fixed;
     right: 0px;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-#trabajos-main .redes-fijo{
-    background-color: #FC9EFF;
-    padding: 20px;
-    position: fixed;
-    right: 0px;
-    z-index: 1000;
+    z-index: 50;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -133,7 +122,7 @@ nav a {
 
 #sobre-mi {
     width: 100%;
-    height: 1000px;
+    height: 90vh;
     background-color: #FC9EFF;
     padding: 140px 100px;
     display: flex;
@@ -155,6 +144,20 @@ nav a {
     padding: 30px 60px;
     background-color: #C6E11C;
     border-radius: 60px 60px 0% 60px;
+    position: relative; 
+
+    span  {
+        position: absolute;
+        right: 0;
+        width: 0;
+        background-color: #C6E11C;
+        border-left: 4px solid #18602C;
+        animation: maquina 3s infinite alternate steps(13);
+}
+} 
+@keyframes maquina {
+    from {width: 100%;}
+    to {width: 0;}
 }
 .informacion p {
     color: black;
@@ -170,7 +173,7 @@ nav a {
 
 
 #datos {
-    height: 1200px;
+    height: 120vh;
     background-color: #FC9EFF;
     display: flex;
     flex-direction: column;
@@ -184,8 +187,6 @@ nav a {
     flex-direction: row;
     justify-content: center;
     gap: 40px;
-
-
 }
 .educacion, .habilidades {
     height: 520px;
@@ -204,9 +205,7 @@ nav a {
         color: #FC9EFF;
         line-height: 40px;
         font-weight:600;
-    }
-    
-    
+    } 
 }
 .datos2 {
     height: 520px;
@@ -249,16 +248,16 @@ nav a {
 
 
 #contenedor{
-    height: 1100px;
+    height: 100vh;
     overflow: hidden;
     background-color: #18602C;
     padding: 40px 0;
-    
 }
 .fotos {
     height: 100%;
     position: relative;
-    
+    display: flex;
+    justify-content: center;
 }
 .carrusel {
     height: 100%;
@@ -283,13 +282,11 @@ nav a {
 }
 
 
-
-
+/* contacto */
 #informacion_contacto {
     font-family: "Montserrat";
     background-color: #FC9EFF;
 }
-
 .estructura_contacto {
     padding: 300px 100px 100px;
     display: flex;
@@ -298,10 +295,9 @@ nav a {
     align-items: flex-start;
     gap: 150px;
 }
-
 .contacto {
     color:#18602C;
-    width: 875px;
+    width: 83vh;
     background-color:#C6E11C;
     padding: 48px 40px;
     display: flex;
@@ -313,19 +309,15 @@ nav a {
         font-family: "Montserrat Alternates";
         font-size: 75px; 
     }
-    
 }
-
 form {
     width: 100%;
     height: auto;
 }
-
 label {
     font-size: 1.5em;
     color: black;
 }
-
 input {
     font-size: 1.5em;
     width: 100%;
@@ -337,7 +329,6 @@ input {
     border-radius: 24px;
     border: 3px solid #18602C;
 }
-
 textarea {
     font-size: 1.5em;
     width: 100%;
@@ -349,7 +340,6 @@ textarea {
     border-radius: 24px;
     border: 3px solid #18602C;
 }
-
 .boton_enviar {
     width: 100%;
     background-color: #18602C;
@@ -357,7 +347,6 @@ textarea {
     height: 130px;
     font-size: 45px;
 }
-
 .columna_derecha {
     display: flex;
     flex-direction: column;
@@ -383,11 +372,9 @@ textarea {
         font-size: 45px; 
     }
     p {
-        width: 520px;
-        
+        width: 520px;  
     }
 }
-
 
 .redes {
     display: flex;
@@ -409,8 +396,17 @@ textarea {
 }
 
 
-
-
+/* trabajos */
+#trabajos-main .redes-fijo{
+    background-color: #FC9EFF;
+    padding: 20px;
+    position: fixed;
+    right: 0px;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 #trabajos-main {
     background-color: #C6E11C;
     padding: 300px 100px 100px;
@@ -441,64 +437,103 @@ textarea {
     gap: 20px;
 }
 .video-medios {
-    margin-left: 20px;
+    margin-left: 50px;
 }
-
 
 .close {
-    display: block;
     position: absolute;
-    top: 120px;
-    right: 80px;
-    font-size: 40px;
-    font-family: "Montserrat Alternates";
-    color: #C6E11C;
-    background-color: black;
-    border-radius: 40px;
-    text-align: center;
+    top: 100px;
+    right: 100px;
     width: 60px;
     height: 60px;
-    line-height: 60px;
-    mix-blend-mode: plus-lighter;
-}
-.flecha-iz-galeria, .flecha-de-galeria {
-    display: block;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    align-items: center;
-    
+    z-index: 2000;
 }
 #galeria {
-    display: none;
+	display: none;
 	width: 100%;
 	justify-content: center;
 	height: 100vh;
-	z-index: 10;
-    top: 10;
+    background: rgba(0, 0, 0, 0.7);
+	top: 0;
+	z-index: 800;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0,5);
 }
 #galeria-oculta {
-    display: flex;
-    width: 100%;
-    max-width: 1350px;
-    overflow: hidden;
-    z-index: 20;
-}
-.light-box {
-    display: flex;
+	display: flex;
+	width: 100%;
+	max-width: 1450px;
+	overflow: hidden;
+	z-index: 900;
     align-items: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 100vh;
-    justify-content: space-between;
+}
+.fraccion-galeria {
+	display: flex;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 100%;
+	min-width: 1450px;
+	height: 100vh;
+	justify-content: space-between;
+}
+.primer-ultima-flecha {
+	visibility: hidden;
+}
+#img1 {
+    background-image: url("img/brezza1.png");
+}    
+#img2 {
+    background-image: url("img/brezza2.png");
+}   
+#img3 {
+    background-image: url("img/insta-brezza.jpg");
+}
+#img4 {
+    background-image: url("img/expo-postal1.jpg");
+}
+#img5 {
+    background-image: url("img/expo-postal2.jpg");
+}
+#img6 {
+    background-image: url("img/expo-invitacion.jpg");
+}
+#img7 {
+    background-image: url("img/expo-afiche.jpg");
+}
+#img8 {
+    background-image: url("img/expo-catalogo.jpg");
+}
+#img9 {
+    background-image: url("img/expo-catalogo2.jpg");
+}
+#img10 {
+    background-image: url("img/publi1.png");
+}
+#img11 {
+    background-image: url("img/videos/video-tipo.gif");
+}
+#img12 {
+    background-image: url("img/memoria1.png");
+}
+#img13 {
+    background-image: url("img/memoria2.png");
+}
+#img14 {
+    background-image: url("img/posters.png");
+}
+#img15 {
+    background-image: url("img/pintura3.jpeg");
+}
+#img16 {
+    background-image: url("img/pintura1.jpeg");
+}
+#img17 {
+    background-image: url("img/pintura2.jpeg");
 }
 
 
-
-
+/* footer */
 footer {
     height: 150px;
     background-color: #18602C;
@@ -515,4 +550,39 @@ footer {
         display: flex;
         flex-direction: column;
     }
+}
+
+
+/* movil */
+@media screen and (max-width: 600px)  {
+    #presentacion {
+        width: 600px;
+        height: 84vh;
+        background-color: #18602C;
+        display: flex;
+        align-items: center;
+        padding:100px 
+    }
+    .nombre {
+        font-size: 140px;
+        
+    }
+    .nombre1 {
+        flex-direction: column;
+    }
+    .nombre2 {
+        flex-direction: row;
+    }
+    
+    .redes-fijo {
+        background-color: #C6E11C;
+        padding: 20px;
+        position: fixed;
+        right: 0px;
+        z-index: 50;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
 }
